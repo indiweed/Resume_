@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Резюме Бахрова Михаила">
+    <meta name="keywords" content="HTML, css, junior, IT, resume">
+    <title>Сайт-резюме Бахрова Михаила</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+    <style>
+        @media(max-width: 650px) {
+            .container{
+                padding: 10px;
+            }
+            .main_info, .card h2{
+                display: block;
+                text-align: center;
+            }
+            .hobbies_card li{
+                padding-left: 20px;
+            }
+            .form-row{
+                display: block;
+            }
+            .form-row .form-group{
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            .td, .link_company{
+                text-align: center;
+            }
+
+            .link_company:hover{
+                background: none;
+                cursor: pointer;
+                text-decoration:underline;
+            }
+          
+        }
+    </style>
+
+<body>
+
+    <div class="container">
+    <div class="main_info">
+        <img src="Аватарка.jpg" alt="Avatar" width="250">
+
+        <div class="info-text">
+            <h1>Михаил Бахров</h1>
+            <p>Я являюсь студентом онлайн школы <a href="https://result.school/" target="_blank">Result School</a>, изучаю <em>разные языки программирования.</em></p>
+            <p class="social_network"><strong>Список социальных сетей:</strong></p>
+
+            <a href="https://vk.com/mvolno" target="_blank">Вконтакте</a>
+            |
+            <a href="https://instagramishe.ru/" target="_blank">Instagram</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="hobbies_card">
+
+                <h2>Мои увлечения</h2>
+                <ul class="list">
+                    <li><em>Горные лыжи</em></li>
+                    <li><em>Программирование</em></li>
+                    <li><em>Путешествия</em></li>
+                </ul>
+        </div>
+
+        <div class="exp_card">
+
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td> <a href="https://24hsoft.com/about" target="_blank" class="link_company">ООО 24Н Софт</a> </td>
+                        <td>Frontend-разработчик</td>
+                        <td>2017-2018</td>
+                    </tr>            
+                    <tr>
+                        <td> <a href="https://slurm.io/" target="_blank" class="link_company">Slerm</a> </td>
+                        <td>Frontend-разработчик</td>
+                        <td>2018-2020</td>
+                    </tr>
+                    <tr>
+                        <td> <a href="https://justice-it.ru/" target="_blank" class="link_company">Justice-IT</a></td>
+                        <td>Middle-frontend</td>
+                        <td>2020-2021</td>
+                    </tr>
+                    <tr>
+                        <td> <a href="https://go.newgen.vision/showreel" target="_blank" class="link_company">NewGen Vision</a> </td>
+                        <td>Software-engineer</td>
+                        <td>2021-сейчас</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    
+    
+    <form class="form">
+        <h2>Связаться со мной</h2>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" placeholder="Введите имя">
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" placeholder="Введите email">
+            </div>
+        </div>
+    
+           <div class="form-group">
+                <label for="message">Ваше сообщение:</label>
+                <br>
+                <textarea type="message" id="message" placeholder="Введите сообщение..." cols="25" rows="5">       </textarea>
+            </div>
+        <button class="btn">Отправить!</button>
+    </form>
+</div>
+</body>
+</html>
